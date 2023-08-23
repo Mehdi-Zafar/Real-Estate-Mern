@@ -1,0 +1,678 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  /* font-family: "Stylish", sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* <<<<<<< HEAD */
+.gap {
+  margin: 400px auto;
+}
+/* ======= */
+
+/* Signin.js and Signout.js */
+
+h2.Heading {
+  text-align: center;
+  /* text-decoration: underline; */
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+div.container_SignIn li,
+div.container_SignUp li {
+  text-align: start;
+  font-weight: 600;
+  list-style-type: none;
+  color: #444;
+}
+
+div.container_SignIn input,
+div.container_SignUp input {
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  margin: 5px auto;
+}
+
+button.logIn {
+  background-color: #252525;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  padding: 7px 10px;
+  margin: 10px auto;
+  width: 100%;
+  border: none;
+}
+
+button.logIn:hover {
+  opacity:0.95;
+}
+
+input:focus {
+  background-color: #e5e5e5;
+  outline: none;
+}
+
+div.container_SignIn {
+  width: clamp(300px,50%,400px);
+  height: fit-content;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-inline: auto;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+div.container_SignUp {
+  margin: auto;
+  align-items: center;
+  width: clamp(300px,50%,400px);
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+div.container_SignUp a,
+div.container_SignIn a {
+  color: blue;
+  text-decoration: underline;
+}
+
+div.container_SignIn h5,
+div.container_SignUp h5 {
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* propertydetail.js */
+
+h2.propertydetail {
+  margin-top: 30px;
+  text-decoration: underline;
+  text-indent: 15px;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  margin: auto;
+  text-align: center;
+}
+
+table.detailtable th,
+table.detailtable td {
+  padding: 15px;
+}
+table.detailtable th {
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+  font-size: large;
+}
+
+table.detailtable td {
+  color: black;
+}
+
+.checked {
+  color: orange;
+}
+
+.rating {
+  display: inline-block;
+  text-indent: 10px;
+}
+
+button.report {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: large;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+button.report:hover {
+  opacity: 0.9;
+}
+
+img.imgdetail {
+  height: 300px;
+  width: 500px;
+  margin-top: 50px;
+}
+
+/* addProperty.js */
+
+div.AddProperty {
+  margin-block: 30px;
+  margin-inline: auto;
+  border: 1px solid gray;
+  width: 55%;
+  box-shadow: 2px 4px 6px rgb(58, 57, 57);
+  padding: 15px 10px;
+  background-color: rgba(236, 234, 229, 0.308);
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+
+div.div-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.textInput {
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+
+div.textInput input {
+  min-width: 100px;
+}
+
+button.submit {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: auto;
+  display: block;
+}
+
+.select {
+  text-align: center;
+  margin: 20px;
+}
+
+.select select {
+  margin-inline: 5px;
+}
+
+div.AddProperty table {
+  width: 40%;
+  height: fit-content;
+  margin-top: 20px;
+  margin-inline: auto;
+  margin-bottom: 50px;
+  /* padding: -30px; */
+  font-size: large;
+  font-weight: bold;
+  box-shadow: 0 2px 5px black;
+}
+
+div.AddProperty table th {
+  text-align: center;
+}
+
+div.AddProperty table th,
+div.AddProperty table td {
+  padding: 10px;
+}
+
+div.AddProperty input {
+  width: fit-content;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+  margin-inline: 5px;
+}
+
+div.AddProperty input.submit {
+  background-color: black;
+  color: white;
+}
+
+div.AddProperty input.submit:hover {
+  opacity: 0.9;
+}
+
+div.AddProperty h2 {
+  text-align: center;
+  margin-top: 2%;
+  text-decoration: underline;
+}
+
+div.AddProperty select {
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* head.js(navbar) */
+
+nav {
+  background-color: #f2f2f2;
+  box-shadow: 1px 1px 10px silver;
+  padding-block: 12px;
+  font-weight: 600;
+  color: #444;
+}
+
+nav a.navbar-brand {
+  margin-inline-start: 3%;
+  margin-inline-end: 4%;
+  font-size: x-large;
+  color: #444;
+}
+
+nav li a {
+  color: #444;
+  font-size: large;
+  text-decoration: none;
+  padding-inline: 15px;
+}
+
+nav li {
+  margin: auto;
+}
+
+nav li a:hover {
+  color: #222;
+}
+
+nav li a.navbar-brand:hover {
+  box-shadow: none;
+  text-decoration: none;
+  color: #222;
+}
+
+.dropdown-item {
+  margin-top: 0px;
+  color: #444;
+}
+
+.dropdown-item:hover {
+  text-decoration: none;
+  background-color: #222;
+}
+
+.navbar-toggler {
+  background-color: lightgreen;
+  color: black;
+  border: 2px solid black;
+}
+
+/* foot.js(footer) */
+
+footer {
+  background-color: #f2f2f2;
+  color: #444;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  text-align: center;
+  bottom: 0;
+  clear: both;
+}
+
+footer h5 {
+  font-weight: 600;
+}
+
+/* Searchbar.js */
+
+div.Searchbar {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: clamp(300px,55%,750px);
+  box-shadow: 1px 1px 7px silver;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.Searchbar h1{
+  color:#333;
+}
+
+div.Searchbar button {
+  background-color: #222;
+  color: white;
+  border-radius: 5px;
+  padding: 7px 10px;
+  border:none;
+  font-size: 1.1rem;
+  width: 200px;
+}
+
+div.Searchbar button:hover {
+  opacity: 0.95;
+}
+
+div.Searchbar input {
+  width: 45%;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 7px 5px;
+  text-align: center;
+  outline: none;
+  border: none;
+  background-color: #ededed;
+}
+
+div.Searchbar select {
+  text-align: center;
+  width: 45%;
+  margin: 5px;
+  background-color: #ededed;
+  color: #333;
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* home.js */
+
+div.carousel-item img {
+  height: 83vh;
+  width: 100%;
+}
+
+div.carousel-item h2 {
+  color: yellow;
+  position: relative;
+  font-family: "Stylish", sans-serif;
+  font-size: xxx-large;
+  background: black;
+  border: 2px dotted yellow;
+  border-radius: 25px;
+  opacity: 0.8;
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 5px;
+  padding: 7px;
+}
+
+div.carousel-item span {
+  position: relative;
+  color: black;
+  margin-inline: 10px;
+  background-color: yellow;
+  font-size: xx-large;
+  border-radius: 10px;
+  font-family: "Stylish", sans-serif;
+  padding: 5px;
+  opacity: 0.85;
+}
+
+/* >>>>>>> 6161686f7624a19bf38008f63e1774d32c455be8 */
+
+/* Proprent */
+
+.card-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 30px 20px;
+}
+
+.prop-sale-head{
+  color: #444;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px auto;
+}
+
+div.card {
+  width: 300px;
+  height: 340px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding-bottom: 10px;
+  transition: 0.5s;
+  box-shadow: 1px 1px 15px silver;
+}
+
+div.card h2{
+  font-size: 1.5rem;
+  margin: 5px auto;
+}
+
+div.card h4 {
+  padding: 5px 2px;
+}
+
+div.card h5 {
+  font-weight: 600;
+  margin: 3px auto;
+  font-size: 1rem;
+}
+
+div.card button {
+  background-color: transparent;
+  padding: 5px 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 7px;
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #444;
+  color:#444;
+}
+
+div.card button a {
+  color:#444;
+  text-decoration: none;
+}
+
+div.card:hover {
+  transform: translateY(-7px);
+  transition: 0.5s;
+  box-shadow: 1px 1px 25px silver;
+}
+
+div.card button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+div.card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1050px) {
+  nav a.navbar-brand {
+    margin-inline-start: 0.5%;
+    margin-inline-end: 4%;
+    font-size: large;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav li {
+    margin-inline: 0;
+    text-align: center;
+    font-size: medium;
+  }
+
+  nav li div a.dropdown-item {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+
+  div.carousel-item h2 {
+    font-size: large;
+  }
+
+  div.carousel-item span {
+    font-size: medium;
+  }
+
+  div.Searchbar {
+    width: 70%;
+  }
+
+  div.container_SignIn {
+    width: 40%;
+  }
+
+  div.container_SignUp {
+    width: 45%;
+  }
+  div.card {
+    width: 30%;
+    height: auto;
+    margin-inline: 1%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  * {
+    font-size: medium;
+  }
+  div.container_SignIn {
+    width: 70%;
+  }
+  div.container_SignUp {
+    width: 80%;
+  }
+  button.navbar-toggler {
+    padding: 5px;
+  }
+  div.Searchbar {
+    width: 90%;
+  }
+  img.imgdetail {
+    width: 350px;
+    height: auto;
+  }
+  div.Searchbar input,
+  div.Searchbar select {
+    width: 70%;
+  }
+  div.AddProperty table th,
+  div.AddProperty table td {
+    padding: 3px;
+  }
+  div.card {
+    font-size: small;
+    width: 43%;
+    height: auto;
+    margin-inline: 3%;
+  }
+  div.card button {
+    padding: 3px;
+    font-size: small;
+  }
+  div.card h2,
+  div.card h6 {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  * {
+    font-size: small;
+  }
+  div.container_SignIn {
+    width: 80%;
+  }
+  div.container_SignUp {
+    width: 85%;
+  }
+  nav li a,
+  footer h5 {
+    font-size: small;
+  }
+  button.navbar-toggler {
+    padding: 3px;
+  }
+  nav a.navbar-brand {
+    padding: 0;
+    margin: 0;
+    font-size: small;
+  }
+  img.imgdetail {
+    width: 250px;
+    height: auto;
+  }
+  table.detailtable th,
+  table.detailtable td {
+    padding: 10px;
+    font-size: medium;
+  }
+  button.report {
+    padding: 7px;
+    font-size: small;
+  }
+  div.Searchbar input,
+  div.Searchbar select {
+    width: 80%;
+  }
+  div.AddProperty table {
+    width: 60%;
+  }
+  div.AddProperty table th,
+  div.AddProperty table td {
+    padding: 2px;
+    font-size: smaller;
+  }
+  div.card {
+    font-size: small;
+    width: 80%;
+    height: auto;
+    margin-inline: 10%;
+  }
+  div.card button {
+    padding: 5px;
+    font-size: smaller;
+  }
+  div.card h2,
+  div.card h6 {
+    font-size: medium;
+  }
+  /* div.Searchbar {
+    width: 100%;
+  }
+  div.AddProperty table th {
+    padding: 0;
+  } */
+}
